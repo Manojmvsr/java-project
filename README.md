@@ -1,2 +1,2 @@
 # java-project
-java project with unit tests
+Java Project for Jenkins Course
