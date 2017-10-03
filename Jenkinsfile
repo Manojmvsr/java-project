@@ -11,6 +11,15 @@ pipeline {
         sh 'ant -f build.xml -v'
       }
     }
+    stage('Unit Tests') {
+      agent {
+        label 'apache'
+      }
+      steps {
+        sh 'ant -f test.xml -v'
+        junit 'reports/result.xml'
+      }
+    }
   }
   post {
     always    {
