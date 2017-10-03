@@ -9,7 +9,7 @@ pipeline {
       stage('Print Env') {
       steps {
         sh '-----------------'      
-        sh 'env'
+        sh 'printenv'
         sh '------------------'
       }
     }
