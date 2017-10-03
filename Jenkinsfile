@@ -6,6 +6,13 @@ pipeline {
   }
 
   stages {
+      stage('Print Env') {
+      steps {
+        sh '-----------------'      
+        sh 'env'
+        sh '------------------'
+      }
+    }
     stage('build') {
       steps {
         sh 'ant -f build.xml -v'
