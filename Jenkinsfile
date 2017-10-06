@@ -32,9 +32,6 @@ pipeline {
       }
     }
     stage('Promote to Green') {
-      agent {
-        label 'label1'
-      }
       when {
         branch 'master'
       }
