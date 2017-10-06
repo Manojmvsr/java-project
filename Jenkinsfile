@@ -33,7 +33,7 @@ pipeline {
     }
     stage('Promote to Green') {
       agent {
-        label 'apache'
+        label 'label1'
       }
       when {
         branch 'master'
