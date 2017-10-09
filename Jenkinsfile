@@ -39,7 +39,7 @@ pipeline {
         sh "cp /var/www/html/rectangles/all/rectangle_${env.MAJOR_VERSION}.${env.BUILD_NUMBER}.jar /var/www/html/rectangles/green/rectangle_${env.MAJOR_VERSION}.${env.BUILD_NUMBER}.jar"
       }
     }
-	   stage('Promote Development Branch to Master') {
+    stage('Promote Development Branch to Master') {
       when {
         branch 'development'
       }
